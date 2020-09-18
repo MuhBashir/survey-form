@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace,helvetica, Arial, sans-serif;
+    line-height: 1.0em;
+}
+body{
+    background-color: rgba(138, 43, 226, 0.03);
+    background-image: url(muhammad2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#title, #description{
+    text-align: center;
+}
+#title{
+    padding: 20px;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: bold;
+
+}
+#description{
+    font-size: 1.5em;
+}
+#survey-form{
+    background-color: rgba(80, 80, 80, 0.4);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    width: 70%;
+}
+input[type=text],input[type=email], input[type=number], p, #dropdown, #submit{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+textarea, select{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    padding: 10px;
+
+}
+#name-label,#email-label, #number-label{
+    margin:40px;
+    
+}
+
+div input[type=radio], div input[type=checkbox]{
+    float: left;
+}
+span{
+    color: wheat;
+    font-style: italic;
+}
+div, div label, div+p, div textarea, div input[type=submit],p{
+    margin: 30px;
+}
+#man{
+    padding: 10px;
+    box-sizing: border-box;
+}
+input[type=text]:hover,input[type=email]:hover, input[type=number]:hover, #dropdown:hover, #submit:hover, textarea:hover{
+    color: yellowgreen;
+
+}
+
+
+
