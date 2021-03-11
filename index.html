@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-        
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <h1 id="title">Madigawa Youth In Nation Building Dala</h1>
 
     <p id="description">Education is a key to success</p>
 
+    <form action="#" id="survey-form" method="post">
+      <div>
+        <label for="name" id="name-label"> Name</label>
+        <input
+          type="text"
+          id="name"
+          required="required"
+          placeholder="Enter your name"
+        />
+      </div>
 
+      <div>
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          required="required"
+          placeholder="Enter a valid email"
+        />
+      </div>
 
-    <form action="#0" id="survey-form" method="post">
-        <div>
+      <div>
+        <label for="number" id="number-label"
+          >Age <span>(optional)</span></label
+        >
+        <input
+          type="number"
+          id="number"
+          name="Age"
+          min="10"
+          max="99"
+          placeholder="Enter your age"
+        />
+      </div>
 
-            <label for="name" id="name-label"> Name</label>
-            <input type="text" id="name" required="required" placeholder="Enter your name"/>
-        </div>    
-        
-        
-        <div>
-            <label for="email" id="email-label">Email</label>
-            <input type="email" id="email" required="required" placeholder="Enter a valid email"/>
-        </div>
-        
-        <div>
+      <div>
+        <p>please select your favorite Subjects</p>
+        <label for="Mathematics">Mathematics</label>
+        <input
+          id="Mathematics"
+          type="radio"
+          name="food"
+          value="Mathematics"
+          checked
+        />
+      </div>
+      <div>
+        <label for="physics">Physics</label>
+        <input type="radio" name="food" value="physics" id="physics" />
+      </div>
+      <div>
+        <label for="Chemistry">Chemistry</label>
+        <input type="radio" name="food" value="Chemistry" id="Chemistry" />
+      </div>
 
-            <label for="number" id="number-label">Age <span>(optional)</span></label>
-            <input type="number" id="number" name="Age" min="10" max="99" placeholder="Enter your age"/>
-        </div> 
-        
-        <div id="man">
+      <div>
+        <p>How do you here about us?</p>
+        <label for="radio">Radio</label>
+        <input type="checkbox" name="service" value="radio" id="radio" />
+      </div>
+      <div>
+        <label for="telvision">Telvision</label>
+        <input
+          type="checkbox"
+          name="service"
+          value="telvision"
+          id="telvision"
+        />
+      </div>
+      <div>
+        <label for="others">Others</label>
+        <input type="checkbox" name="service" value="others" id="others" />
+      </div>
 
-            <p>please select your favorite Subjects</p>
-            <div>
-            
+      <div>
+        <p>Why do you want to join us?</p>
 
-                <label for="Mathematics">Mathematics</label>
-                <input id="Mathematics" type="radio" name="food" value="Mathematics" checked/>
-            </div>    
-            <div>    
-                <label for="physics">Physics</label>
-                <input type="radio" name="food" value="physics" id="physics"/>
-            </div>    
-            <div>
-                <label for="Chemistry">Chemistry</label>
-                <input type="radio" name="food" value="Chemistry" id="Chemistry"/>
-            </div>
-            
-        
-            <p>How do you here about us?</p>
+        <select name="reason" id="dropdown">
+          <option value="education">Education</option>
+          <option value="advice">Advice</option>
+          <option value="career">Career</option>
+        </select>
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
 
-            <div>
-            
-
-                <label for="radio">Radio</label>
-                <input type="checkbox" name="service" value="radio" id="radio"/>
-            </div>    
-            <div>  
-                <label for="telvision">Telvision</label>
-                <input type="checkbox" name="service" value="telvision" id="telvision"/>
-            </div>    
-            <div>  
-                <label for="others">Others</label> 
-                <input type="checkbox" name="service" value="others" id="others" />
-            </div>
-        
-            
-            <p>Why do you want to join us?</p>
-        
-            
-
-            <select name="reason" id="dropdown">
-                <option value="education">Education</option>
-                <option value="advice">Advice</option>
-                <option value="career">Career</option>
-            </select>
-            
-
-            <p>Any comments or suggestions?</p>
-            
-            
-            <textarea name="comments" cols="80" rows="11">Enter your comments here</textarea>
-
-
-            
-            <input type="submit" id="submit" name="submit" value="Submit"/>
-        </div>
-
+        <textarea name="comments" cols="100" rows="50" id="textarea">
+Enter your comments here</textarea
+        >
+      </div>
+      <div>
+        <input type="submit" id="submit" name="submit" value="Submit" />
+      </div>
     </form>
-    
+
     <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+  </body>
 </html>
